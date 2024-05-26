@@ -1,0 +1,13 @@
+# [[language]]
+# name = "json"
+# language-servers = [ "vscode-json-language-server" ]
+# auto-format = true
+
+[[language]]
+name = "git-commit"
+file-types = []
+
+[language-server]
+qmlls = { command = "/opt/Qt/6.6.2/gcc_64/bin/qmlls" }
+omnisharp = { command = "OmniSharp", args = [ "--languageserver" ] , timeout=10000 }
+# vscode-json-language-server = { command = "vscode-json-languageserver", args = ["--stdio"], config = { provideFormatter = true, json = { validate = { enable = true } } } }
