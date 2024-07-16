@@ -23,5 +23,9 @@ display-inlay-hints = true
 render = true
 character = "┊"
 
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "error"
+
 # [editor.soft-wrap]
 # enable = true
