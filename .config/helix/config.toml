@@ -1,4 +1,4 @@
-theme = "dark_high_contrast"
+tgheme = "dark_high_contrast"
 
 [editor]
 line-number = "relative"
@@ -29,3 +29,6 @@ other-lines = "error"
 
 # [editor.soft-wrap]
 # enable = true
+
+[keys.normal]
+C-b = ":echo %sh{git show --no-patch --format='%%h (%%an: %%ar): %%s' $(git blame -p %{buffer_name} -L%{cursor_line},+1 | head -1 | cut -d' ' -f1)}"
